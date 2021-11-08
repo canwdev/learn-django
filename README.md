@@ -13,4 +13,5 @@
   - `python manage.py createsuperuser`
 - https://docs.djangoproject.com/en/3.2/intro/tutorial03/
 - https://docs.djangoproject.com/en/3.2/intro/tutorial04/
+- https://docs.djangoproject.com/en/3.2/intro/tutorial05/
 
