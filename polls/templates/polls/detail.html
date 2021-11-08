@@ -5,14 +5,29 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Detail</title>
 </head>
 <body>
-<h1>{{ question.question_text }}</h1>
-<ul>
-  {% for choice in question.choice_set.all %}
-  <li>{{ choice.choice_text }}</li>
-  {% endfor %}
-</ul>
+<h1>Detail Page</h1>
+
+<form action="{% url 'polls:vote' question.id %}" method="post">
+  {% csrf_token %}
+  <fieldset>
+    <legend><h2>{{ question.question_text }}</h2></legend>
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+    <ul>
+      {% for choice in question.choice_set.all %}
+        <li>
+          <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+          <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label>
+        </li>
+      {% endfor %}
+    </ul>
+  </fieldset>
+  <input type="submit" value="Vote">
+</form>
+
+<p></p>
+
 </body>
 </html>
