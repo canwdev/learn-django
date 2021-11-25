@@ -15,4 +15,6 @@
 - https://docs.djangoproject.com/en/3.2/intro/tutorial04/ (view class)
 - https://docs.djangoproject.com/en/3.2/intro/tutorial05/ (automated tests)
 - https://docs.djangoproject.com/en/3.2/intro/tutorial06/ (static files)
+- https://docs.djangoproject.com/en/3.2/intro/tutorial07/ (custom admin site)
+  - `python -c "import django; print(django.__path__)"`
 
