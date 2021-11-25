@@ -1,5 +1,7 @@
 # Learn Django Codes
 
+## Beginner tutorial
+
 - https://docs.djangoproject.com/en/3.2/intro/tutorial01/ (setup new app)
   - `python3 -m pip install Django`
   - `python manage.py runserver 8080`
@@ -18,3 +20,6 @@
 - https://docs.djangoproject.com/en/3.2/intro/tutorial07/ (custom admin site)
   - `python -c "import django; print(django.__path__)"`
 
+## Advanced tutorial
+
+- https://docs.djangoproject.com/en/3.2/intro/reusable-apps/
