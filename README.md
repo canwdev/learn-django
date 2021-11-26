@@ -22,4 +22,9 @@
 
 ## Advanced tutorial
 
-- https://docs.djangoproject.com/en/3.2/intro/reusable-apps/
+- https://docs.djangoproject.com/en/3.2/intro/reusable-apps/ (publish package)
+  - [django-polls](./django-polls.zip)
+  - python setup.py sdist
+  - python -m pip install --user django-polls/dist/django-polls-0.1.tar.gz
+  - python -m pip uninstall django-polls
+- 
